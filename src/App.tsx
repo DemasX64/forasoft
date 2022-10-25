@@ -6,15 +6,22 @@ import {
   Link
 } from "react-router-dom";
 import './App.css';
+import RoomPage from './pages/room-page/room-page';
+import RoomListPage from './pages/room-list-page/room-list-page';
+import LoginPage from './pages/login-page/login-page';
 
 function App() {
   return (
     <Router>
       <Route path='/room/:id'>
-        
+        <RoomPage />
       </Route>
-      <Route path='/'></Route>
-      <Route path='/login'></Route>
+      <Route path='/'>
+        <RoomListPage />
+      </Route>
+      <Route path='/login'>
+        <LoginPage />
+      </Route>
     </Router>
   );
 }

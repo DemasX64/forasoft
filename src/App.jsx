@@ -3,6 +3,7 @@ import {
   BrowserRouter as Router,
   Route,
   Routes,
+  Navigate,
 } from 'react-router-dom';
 import './App.css';
 import io from 'socket.io-client';
@@ -20,6 +21,7 @@ function App() {
     <SocketContext.Provider value={socket}>
       <Router>
         <Routes>
+          <Route path="*" element={<Navigate to="/" />} />
           <Route path="/room/:roomID" element={<ProtectedRoute />}>
             <Route path="/room/:roomID" element={<RoomPage />} />
           </Route>

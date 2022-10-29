@@ -93,6 +93,10 @@ const onConnection = (socket) => {
 
   socket.on('disconnect', () => {
     delete nicknames[socket.id];
+    const rooms = RoomService.getRooms(io);
+    rooms.forEach((room) => {
+      io.to(room.id).emit(ACTIONS.GET_MEMBERS, RoomService.getMembers(io, room.id, nicknames));
+    });
   });
 };
 

@@ -1,3 +1,4 @@
+/* eslint-disable react/no-array-index-key */
 import React, { useContext, useEffect, useState } from 'react';
 import { useNavigate, useParams } from 'react-router';
 import styles from './room-page.module.css';
@@ -85,14 +86,14 @@ function RoomPage() {
         </div>
         <div className={membersList}>
           <p className={membersTitle}>Members</p>
-          {members.map((member) => <p>{member}</p>)}
+          {members.map((member, index) => <p key={index}>{member}</p>)}
         </div>
       </div>
       <div className={chat}>
         <div className={chatMessages}>
-          {messages.map((message) => {
+          {messages.map((message, index) => {
             const { text, from, date } = message;
-            return <Message text={text} from={from} date={date} />;
+            return <Message key={index} text={text} from={from} date={date} />;
           })}
         </div>
         <div className={input}>

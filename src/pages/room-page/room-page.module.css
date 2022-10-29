@@ -1,0 +1,60 @@
+.container {
+  display: grid;
+  grid-template-columns: 20% 50% 30%;
+  grid-template-rows: 100vh;
+}
+
+.column {
+  gap: 10px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.membersList {
+  padding: 10px;
+  flex: 1;
+  border-radius: 20px;
+  background-color: #0088cc;
+}
+.membersTitle{
+  margin: 0;
+  text-align: center;
+}
+
+.chat {
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  margin: 10px 0px;
+  background-color: #0088cc;
+}
+.chatMessages {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+  flex: 1;
+  overflow-y: scroll;
+}
+
+.video {
+  border-radius: 20px;
+}
+.input {
+  padding: 10px;
+  gap: 10px;
+  display: flex;
+}
+.input > input {
+  flex:1;
+}
+
+.buttons {
+  border-radius: 20px;
+  padding: 10px;
+  gap: 10px;
+  background-color: #0088cc;
+  display: flex;
+  flex-direction: column;
+}

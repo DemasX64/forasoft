@@ -1,0 +1,23 @@
+.container {
+  background-color: #fff;
+  color: #000;
+  padding: 10px 20px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.message {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.messageFrom {
+  font-weight: bold;
+}
+
+.messageText {
+  overflow-wrap: anywhere;
+}

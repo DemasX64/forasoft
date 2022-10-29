@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/forasoft/static/css/main.252f0468.css",
-    "main.js": "/forasoft/static/js/main.77f53bba.js",
+    "main.js": "/forasoft/static/js/main.2c99e3a8.js",
     "index.html": "/forasoft/index.html",
     "main.252f0468.css.map": "/forasoft/static/css/main.252f0468.css.map",
-    "main.77f53bba.js.map": "/forasoft/static/js/main.77f53bba.js.map"
+    "main.2c99e3a8.js.map": "/forasoft/static/js/main.2c99e3a8.js.map"
   },
   "entrypoints": [
     "static/css/main.252f0468.css",
-    "static/js/main.77f53bba.js"
+    "static/js/main.2c99e3a8.js"
   ]
 }

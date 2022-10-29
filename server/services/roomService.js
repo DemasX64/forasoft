@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 class RoomService {
   static getRooms(io) {
     try {

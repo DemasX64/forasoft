@@ -29,6 +29,7 @@ export default function useWebRTC(roomID, socket, isVideoEnabled) {
   useEffect(() => {
     async function handleNewPeer({ peerID, createOffer }) {
       if (peerID in peerConnections.current) {
+        // eslint-disable-next-line no-console
         return console.warn(`Already connected to peer ${peerID}`);
       }
 
@@ -169,8 +170,8 @@ export default function useWebRTC(roomID, socket, isVideoEnabled) {
       });
     }
     if (isVideoEnabled) {
-      console.log('video enabled');
       startCapture()
+        // eslint-disable-next-line no-console
         .catch((e) => console.error('Error getting userMedia:', e));
     } else {
       localMediaStream.current?.getTracks()?.forEach((track) => track.stop());

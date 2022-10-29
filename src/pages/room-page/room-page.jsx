@@ -68,9 +68,7 @@ function RoomPage() {
   }, [socket, roomID]);
 
   useEffect(() => {
-    console.log('socket.om');
     socket.on(ACTIONS.SEND_MESSAGE, (message) => {
-      console.log('mesg rcv');
       setMessages((prev) => [...prev, message]);
     });
     return () => {

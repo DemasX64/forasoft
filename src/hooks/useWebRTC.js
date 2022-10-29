@@ -28,10 +28,10 @@ export default function useWebRTC(roomID, socket, isVideoEnabled) {
 
   useEffect(() => {
     async function handleNewPeer({ peerID, createOffer }) {
-      if (peerID in peerConnections.current) {
-        // eslint-disable-next-line no-console
-        return console.warn(`Already connected to peer ${peerID}`);
-      }
+      // if (peerID in peerConnections.current) {
+      //   // eslint-disable-next-line no-console
+      //   return console.warn(`Already connected to peer ${peerID}`);
+      // }
 
       peerConnections.current[peerID] = new RTCPeerConnection({
         iceServers: freeice(),

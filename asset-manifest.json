@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/forasoft/static/css/main.252f0468.css",
+    "main.js": "/forasoft/static/js/main.77f53bba.js",
+    "index.html": "/forasoft/index.html",
+    "main.252f0468.css.map": "/forasoft/static/css/main.252f0468.css.map",
+    "main.77f53bba.js.map": "/forasoft/static/js/main.77f53bba.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.252f0468.css",
+    "static/js/main.77f53bba.js"
+  ]
+}

@@ -170,6 +170,7 @@ export default function useWebRTC(roomID, socket, isVideoEnabled) {
       });
     }
     if (isVideoEnabled) {
+      localMediaStream.current?.getTracks()?.forEach((track) => track.start());
       startCapture()
         // eslint-disable-next-line no-console
         .catch((e) => console.error('Error getting userMedia:', e));

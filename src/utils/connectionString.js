@@ -1,1 +1,1 @@
-export default 'localhost:3000';
+export default 'https://forasoft.herokuapp.com';

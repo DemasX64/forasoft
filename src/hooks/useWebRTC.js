@@ -174,8 +174,6 @@ export default function useWebRTC(roomID, socket, isVideoEnabled) {
       startCapture()
         // eslint-disable-next-line no-console
         .catch((e) => console.error('Error getting userMedia:', e));
-    } else {
-      localMediaStream.current?.getTracks()?.forEach((track) => track.stop());
     }
 
     return () => {
